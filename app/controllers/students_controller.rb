@@ -14,15 +14,15 @@ class StudentsController < ApplicationController
   end
 
   def show
-    student 
+    student
   end
 
   def edit
-    student 
+    student
   end
 
   def update
-    student 
+    student
     @student.update(post_params)
     redirect_to student_path(@student)
   end
