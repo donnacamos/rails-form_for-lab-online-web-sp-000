@@ -1,14 +1,14 @@
 class StudentsController < ApplicationController
-  def index 
+  def index
     @students = Student.all
-  end 
+  end
 
-  def new 
-    @student = Student.new 
-  end 
+  def new
+    @student = Student.new
+  end
 
-  def create 
+  def create
     @student = Student.new(post_params)
-    @student.save 
-  end 
+    @student.save
+  end
 end 
